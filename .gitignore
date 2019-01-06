@@ -5,5 +5,7 @@
 *.pdf
 *.psd
 node_modules/
+_InBox
+_InBox/
 npm-debug.*
 Thumbs.db
