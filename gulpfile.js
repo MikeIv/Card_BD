@@ -98,23 +98,6 @@ gulp.task("css", function () {
 
 
 
-
-
-/*
-gulp.task("css", function () {
-    return gulp.src("src/less/style.less")
-        .pipe(plumber())
-        .pipe(less())
-        .pipe(postcss([
-            autoprefixer()
-        ]))
-        .pipe(csso())
-        .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("build/css"))
-        .pipe(server.stream());
-});
-*/
-
 gulp.task("images", function () {
     return gulp.src("src/img/**/*.{png,jpg,svg}")
         .pipe(imagemin([
