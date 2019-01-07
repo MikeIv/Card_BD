@@ -125,9 +125,11 @@ img {
 }
 .button {
   background-color: #0d7fe8;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
 }
 .button:hover {
   background-color: #0d7fe8;
@@ -165,8 +167,41 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 640px;
-  min-height: 60px;
-  background-color: #AAAAAA;
+  min-height: 70px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #0d7fe8;
+}
+.nav-header-sm__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nav-header-sm__link {
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 14px;
+  text-decoration: underline;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.nav-header-sm__contact {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  width: 112px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+.nav-header-sm__tel {
+  margin-left: auto;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
 }
 .main-sm {
   width: 800px;
@@ -196,17 +231,63 @@ html {
   background-image: url("/img/intro-img-bg.jpg");
   background-color: #ED5541;
 }
-.intro-sm__link-block {
+.intro-sm__image-1 {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+.intro-sm__image-2 {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+}
+.intro-sm__footer-block {
   display: flex;
+  align-items: center;
   width: 800px;
   height: 117px;
   background-color: #535ABB;
 }
+.intro-sm__button {
+  width: 206px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: 120px;
+  font-family: Arial;
+  font-size: 17px;
+  background-color: #ED5541;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+}
 .footer-sm {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 800px;
   min-height: 480px;
   background-color: #656565;
+}
+.footer-sm__info {
+  width: 640px;
+  min-height: 240px;
+}
+.footer-sm__info-blocks-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-sm__info-block {
+  display: flex;
+  width: 200px;
+  min-height: 240px;
+  background-color: #ED5541;
+}
+.footer-sm__bottom-block {
+  width: 800px;
+  min-height: 240px;
+  background-color: #FFFFFF;
 }
 @media screen and (min-width: 780px) {
   .wrapper {
