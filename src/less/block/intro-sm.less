@@ -27,12 +27,32 @@
   position: absolute;
   right: 50px;
   bottom: 0;
+
+  animation-name: opacity-bg;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
 .intro-sm__image-2 {
   position: absolute;
   left: 80px;
   top: 50px;
+
+  animation-name: opacity-bg;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes opacity-bg {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+
 }
 
 .intro-sm__footer-block {
@@ -55,4 +75,148 @@
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
+
+  animation-name: opacity-button;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity-button {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+
+}
+
+// Анимация
+
+.intro-sm__image-box {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+
+  animation-name: move, opacity;
+  animation-duration: 3s, 3s;
+  animation-fill-mode: forwards, forwards;
+
+
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(160px);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.intro-sm__image-box-cover {
+  position: absolute;
+  bottom: 107px;
+  left: 260px;
+  z-index: 8;
+
+  animation-name: cover, move-top;
+  animation-duration: 3s, 3s;
+  animation-delay: 0s, 3.5s;
+  animation-fill-mode: forwards, forwards;
+
+}
+
+@keyframes cover {
+  0% {
+    transform: scale(0, 0);
+  }
+  99% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+@keyframes move-top {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-330px);
+  }
+}
+
+
+.intro-sm__image-box-bottom {
+  position: absolute;
+  bottom: 8px;
+  left: 170px;
+
+  animation: bottom 3s forwards;
+}
+
+@keyframes bottom {
+  0% {
+    transform: scale(0, 0);
+  }
+  99% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+.intro-sm__letter {
+  position: absolute;
+  top: 18px;
+  left: 23px;
+  width: 754px;
+  height: 576px;
+  z-index: 10;
+
+  animation-name: letter-scale, letter-opacity;
+  animation-duration: 6s, 6s;
+  animation-fill-mode: forwards, forwards;
+
+}
+
+@keyframes letter-scale {
+  0% {
+    transform: scale(0, 0);
+  }
+  80% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+@keyframes letter-opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
