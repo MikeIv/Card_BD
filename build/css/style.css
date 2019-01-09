@@ -140,16 +140,16 @@ html {
 }
 .body {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #C7C7C7;
 }
 .card {
   display: block;
   width: 820px;
   min-height: 1238px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0;
   box-sizing: border-box;
-  background-color: #AAAAAA;
+  background-color: #C7C7C7;
 }
 .header-sm {
   display: flex;
@@ -323,12 +323,12 @@ html {
   font-family: Arial;
   font-size: 13px;
   line-height: 22px;
-  color: #AAAAAA;
+  color: #C7C7C7;
   box-sizing: border-box;
 }
 .info-block__item-link {
   text-decoration: none;
-  color: #AAAAAA;
+  color: #C7C7C7;
 }
 .social {
   display: flex;
