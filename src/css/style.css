@@ -326,6 +326,8 @@ html {
           animation-duration: 3s, 3s;
   -webkit-animation-fill-mode: forwards, forwards;
           animation-fill-mode: forwards, forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 @-webkit-keyframes move {
   0% {
@@ -376,8 +378,8 @@ html {
   z-index: 8;
   -webkit-animation-name: cover, move-top;
           animation-name: cover, move-top;
-  -webkit-animation-duration: 3s, 3s;
-          animation-duration: 3s, 3s;
+  -webkit-animation-duration: 4s, 5s;
+          animation-duration: 4s, 5s;
   -webkit-animation-delay: 0s, 3.5s;
           animation-delay: 0s, 3.5s;
   -webkit-animation-fill-mode: forwards, forwards;
@@ -385,30 +387,24 @@ html {
 }
 @-webkit-keyframes cover {
   0% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   99% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
 }
 @keyframes cover {
   0% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   99% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
 }
 @-webkit-keyframes move-top {
@@ -435,35 +431,29 @@ html {
   position: absolute;
   bottom: 8px;
   left: 170px;
-  -webkit-animation: bottom 3s forwards;
-          animation: bottom 3s forwards;
+  -webkit-animation: bottom 4s forwards;
+          animation: bottom 4s forwards;
 }
 @-webkit-keyframes bottom {
   0% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   99% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
 }
 @keyframes bottom {
   0% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   99% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
 }
 .intro-sm__letter {
@@ -475,8 +465,8 @@ html {
   z-index: 10;
   -webkit-animation-name: letter-scale, letter-opacity;
           animation-name: letter-scale, letter-opacity;
-  -webkit-animation-duration: 6s, 6s;
-          animation-duration: 6s, 6s;
+  -webkit-animation-duration: 8s, 8s;
+          animation-duration: 8s, 8s;
   -webkit-animation-fill-mode: forwards, forwards;
           animation-fill-mode: forwards, forwards;
 }
@@ -512,7 +502,7 @@ html {
   0% {
     opacity: 0;
   }
-  50% {
+  65% {
     opacity: 0;
   }
   100% {
@@ -523,7 +513,7 @@ html {
   0% {
     opacity: 0;
   }
-  50% {
+  65% {
     opacity: 0;
   }
   100% {
