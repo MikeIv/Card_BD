@@ -229,8 +229,8 @@ html {
   height: 500px;
   margin: 0;
   padding: 0;
-  background-image: url("/img/intro-img-bg.jpg");
-  background-color: #ED5541;
+  background-image: url("../img/intro-img-bg.jpg");
+  background-color: #FFFFFF;
 }
 .intro-sm__image-1 {
   position: absolute;
@@ -564,7 +564,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 640px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .footer-sm__notice-txt {
   font-family: "Arial", sans-serif;
@@ -574,8 +574,9 @@ html {
 }
 .footer-sm__notice-txt a {
   padding-right: 5px;
+  padding-left: 5px;
   text-decoration: none;
-  color: #0d7fe8;
+  color: #0D7FE8;
 }
 .footer-sm__copyright {
   display: flex;
@@ -588,6 +589,12 @@ html {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+.footer-sm__copyright-link-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .footer-sm__copyright-logo {
   margin-right: 10px;
@@ -620,7 +627,7 @@ html {
 .info-block__header {
   margin-top: 30px;
   margin-bottom: 20px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 18px;
   color: #FFFFFF;
 }
@@ -628,7 +635,7 @@ html {
   position: relative;
 }
 .info-block__item {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 13px;
   line-height: 22px;
   color: #C7C7C7;
@@ -672,6 +679,20 @@ html {
   text-decoration: none;
   color: #C7C7C7;
 }
+.info-block__link-tel {
+  text-decoration: none;
+  color: #FEF59F;
+}
+.info-block__link-tel:hover {
+  text-decoration: underline;
+}
+.info-block__link-site {
+  text-decoration: none;
+  color: #FEF59F;
+}
+.info-block__link-site:hover {
+  text-decoration: underline;
+}
 .social {
   display: flex;
   flex-direction: column;
@@ -693,7 +714,34 @@ html {
   color: #000000;
 }
 .social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #717171;
+  border-radius: 25px;
   margin-bottom: 10px;
+}
+.social__icon-envelope svg {
+  fill: #0D7FE8;
+}
+.social__icon-mc svg {
+  width: 24px;
+  height: 22px;
+  fill: #0D7FE8;
+}
+.social__icon-youtube svg {
+  fill: #0D7FE8;
+}
+.social__icon-inst svg {
+  fill: #0D7FE8;
+}
+.social__icon-vk svg {
+  fill: #0D7FE8;
+}
+.social__icon-fb svg {
+  fill: #0D7FE8;
 }
 @media screen and (min-width: 780px) {
   .wrapper {
